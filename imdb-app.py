@@ -21,7 +21,7 @@ pd.set_option('display.max_rows', None)
 
 
 st.write("""
-# IMDB Movie Succeess Prediction App
+# IMDB Movie Success Prediction App
 
 
 """)
@@ -58,7 +58,7 @@ if st.button('Intercorrelation Heatmap'):
     st.header('Intercorrelation Matrix Heatmap')
     st.write("""Correlation heatmaps are a great way to visualize, not only the relationship betwen input variables, but also the relationship
      between our inputs and our target. This can help with identifying which input features most strongly influence an outcome. In our heatmap
-     we see that there is""")
+     we see that there is a relatively strong correlation between the start year and average rating.""")
     df_selected_all.to_csv('output.csv',index=False)
     df = pd.read_csv('output.csv')
 
